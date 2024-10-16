@@ -1,4 +1,7 @@
-FROM node // base image
+FROM node 
 
+WORKDIR /app
 
-COPY . . // copy all files from current directory to the container
+COPY . /app
+
+RUN npm install
